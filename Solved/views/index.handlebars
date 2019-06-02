@@ -9,30 +9,37 @@
 
   <div class="form-group">
     <label for="devoured">Eaten?</label><br>
-    <input type="radio" name="devoured" value="1" > Eaten!<br>
-    <input type="radio" name="devoured" value="0" checked> Not eaten
+    <input class="with-gap" type="radio" name="devoured" value="1" > Eaten!<br>
+    <input class="with-gap" type="radio" name="devoured" value="0" checked> Not eaten
   </div>
 
   <button type="submit">Add Burger</button>
 </form>
 
-
+<div id="availableBurgerDiv">
 <h2>BURGERS</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> cats/cat-block notEaten=true}}
+      {{> burgers/burger-block notEaten=true}}
     {{/unless}}
   {{/each}}
 </ul>
+
+</div>
+
+
+<div id="eatenBurgerDiv"></div>
 
 <h2>BURGERS THAT HAVE BEEN EATEN</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> cats/cat-block notEaten=false}}
+      {{> burgers/burger-block notEaten=false}}
     {{/if}}
   {{/each}}
 </ul>
+
+</div>
