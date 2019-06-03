@@ -17,7 +17,7 @@ $(function() {
       // data: newDevouredState  ---------------------------> HERE 
     }).then(
       function() {
-        console.log("changed sleep to", isAvailable);  
+        console.log("changed status to", isAvailable);  
         // console.log("changed sleep to", newDevoured); ---------------------------> HERE
 
         // Reload the page to get the updated list
