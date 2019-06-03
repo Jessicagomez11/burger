@@ -10,7 +10,7 @@
     <div id="availableBurgerDiv " class="col s6 m6">
 
 
-      <h4 class="center-align">AVAILABLE</h4>
+      <h4 class="center-align subHeading">AVAILABLE</h4>
 
       <ul>
         {{#each burgers}}
@@ -25,7 +25,7 @@
 
     <div id="eatenBurgerDiv" class="col s6 m6">
 
-      <h4 class="center-align">EATEN</h4>
+      <h4 class="center-align subHeading">EATEN</h4>
 
       <ul>
         {{#each burgers}}
@@ -40,7 +40,7 @@
 
 
   <div class="row">
-    <h4>Add a Burger</h4>
+    <h4 class="subHeading">Add a Burger</h4>
 
 
     <form class="create-form" action="#">
@@ -51,7 +51,7 @@
       </div>
 
       <div class="form-group">
-        <label for="devoured">Status</label><br>
+        <label for="devoured">Status of the burger</label><br>
         <p>
           <label>
             <input class="with-gap" name="devoured" type="radio" value="0" checked />
