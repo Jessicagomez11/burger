@@ -1,7 +1,10 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #d8c4f4;
+}
+h1{
+  font-family: 'UnifrakturMaguntia', cursive;
 }
 
 .label {
@@ -16,4 +19,8 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.closeBtn{
+  padding: 0px;
 }

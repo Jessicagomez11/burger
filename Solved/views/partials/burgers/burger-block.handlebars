@@ -2,7 +2,7 @@
 <li>
 	{{burger_name}}
 
-	<button class="change-if-eaten" data-id="{{id}}" data-newsleep="{{notEaten}}">
+	<button class="change-if-eaten waves-effect waves-teal btn-flat white" data-id="{{id}}" data-newsleep="{{notEaten}}">
 	{{!-- <button class="change-sleep" data-id="{{id}}" data-newdevoured="{{devoured}}"> --}} 
 		{{#if notEaten}}
 		EAT IT!!
@@ -11,5 +11,10 @@
 		{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	{{!-- {{!-- <button class="delete-burger waves-effect waves-teal btn-flat white" data-id="{{this.id}}">DELETE! </button> --}}
+	{{!-- <button class="delete-burger waves-effect waves-teal btn-flat white" data-id="{{this.id}}">DELETE! </button> --}} 
+	<a class=" delete-burger waves-effect waves-light btn-small white black-text center-align closeBtn" data-id="{{this.id}}"><i class="material-icons left">clear</i></a>
+
+
 </li>
+
