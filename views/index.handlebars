@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="right-align">Hood burger</h1>
+  <h1 class="right-align">hood burger</h1>
 
 
 
@@ -42,33 +42,56 @@
   <div class="row">
     <h4 class="subHeading">Add a Burger</h4>
 
+    <div class="col s6">
 
-    <form class="create-form" action="#">
+      <form class="create-form" action="#">
 
-      <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="name">
-      </div>
+        <div class="form-group">
+          <label for="ca">Burger Name:</label>
+          <input id="inputLine"  type="text" id="ca" name="name">
+        </div>
+    </div>
+    <div class="col s1">
+      {{!-- <button class="waves-effect waves-teal btn-flat large " type="submit"><a <i
+          class="material-icons add">add</i></a></button> --}}
 
+          
+
+            <button class="btn-floating btn-large waves-effect waves-light red" type="submit" name="action">
+    <i class="material-icons right">add</i>
+  </button>
+
+    </div>
+
+    <div class="col s5">
       <div class="form-group">
         <label for="devoured">Status of the burger</label><br>
-        <p>
-          <label>
-            <input class="with-gap" name="devoured" type="radio" value="0" checked />
-            <span>Not Eaten</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="with-gap" name="devoured" type="radio" value='1' />
-            <span>Eaten</span>
-          </label>
-        </p>
+        <div class="row">
+          <div class="col 6">
+            <p>
+              <label>
+                <input class="with-gap white" name="devoured" type="radio" value="0" checked />
+                <span class:'radioButtons'>Not Eaten</span>
+              </label>
+            </p>
+          </div>
+        
+
+        <div class="col 6">
+          <p>
+            <label>
+              <input class="with-gap white" name="devoured" type="radio" value='1' />
+              <span class:'radioButtons'>Eaten</span>
+            </label>
+          </p>
+          </div>
+        </div>
       </div>
+    </div>
 
 
 
-      <button class="waves-effect waves-teal btn-flat" type="submit">Add Burger</button>
+
     </form>
 
   </div>

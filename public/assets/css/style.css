@@ -1,26 +1,77 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #d8c4f4;
+  background: white;
+}
+body{
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  background-color: white;
+  font-family: 'Josefin Slab', serif;
 }
 h1{
   font-family: 'UnifrakturMaguntia', cursive;
+  color: #191526;
+  letter-spacing: 2px;
+  border-bottom: 1mm solid black;
+ 
+}
+.subHeading{
+color:#191526;
+border-bottom: 1mm solid black;
+}
+.burgerName{
+  font-family: 'Black Ops One', cursive;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+label{
+  font-weight: bold;
+  color: #191526;
 }
 
-.label {
-  font-weight: bold;
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+  background-color:red !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  border: 2px solid red !important;
+}
+
+a.delete-burger{
+  color:red!important;
+}
+.change-if-eaten{
+  letter-spacing: 2px;
+  font-family: 'Josefin Slab', serif;
+
+}
+.buttonHolder{
+  align-content: center!important;
+}
+
+.input-field textarea[class=materialize-textarea]:focus {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+  }
+
+a.add{
+  color:red;
+}
+.add{
+  align-content: center;
 }
 
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  
 }
 
 .form-group {
   margin-bottom: 5px;
 }
 
-.closeBtn{
+/* .closeBtn{
   padding: 0px;
-}
+} */

@@ -1,20 +1,19 @@
 {{!-- THIS FILE CREATES NEW BUTTONS TO WAKE UP OR DELETE THE CAT --}}
-<li>
+<li class='center burgerName'>
 	{{burger_name}}
 
-	<button class="change-if-eaten waves-effect waves-teal btn-flat white" data-id="{{id}}" data-newsleep="{{notEaten}}">
-	{{!-- <button class="change-sleep" data-id="{{id}}" data-newdevoured="{{devoured}}"> --}} 
+	<div class="buttonHolder valign-wrapper  ">
+
+	<button class="change-if-eaten waves-effect waves-red btn-flat white center-align" data-id="{{id}}" data-newsleep="{{notEaten}}" >
 		{{#if notEaten}}
 		EAT IT!!
 		{{else}}
 		RESTOCK
 		{{/if}}
 	</button>
+ 
+	<a class=" delete-burger waves-effect waves-light btn-small btn-flat white black-text center-align closeBtn " data-id="{{this.id}}"><i class="material-icons left">clear</i></a>
 
-	{{!-- {{!-- <button class="delete-burger waves-effect waves-teal btn-flat white" data-id="{{this.id}}">DELETE! </button> --}}
-	{{!-- <button class="delete-burger waves-effect waves-teal btn-flat white" data-id="{{this.id}}">DELETE! </button> --}} 
-	<a class=" delete-burger waves-effect waves-light btn-small white black-text center-align closeBtn" data-id="{{this.id}}"><i class="material-icons left">clear</i></a>
-
-
+</div>
 </li>
 

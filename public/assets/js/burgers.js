@@ -1,24 +1,26 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-if-eaten").on("click", function(event) {
+    
+    M.toast({html: "Yuuuum"}, 4000)
+
+    
     var id = $(this).data("id");
     var isAvailable = $(this).data("newsleep");  
-    // var newDevoured = $(this).data("newDevoured"); ---------------------------> HERE
+    
 
     var availableStatus = {
       devoured: isAvailable  
-      // devoured: newDevoured ---------------------------> HERE
     };
-
+   
+    
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: availableStatus 
-      // data: newDevouredState  ---------------------------> HERE 
     }).then(
       function() {
         console.log("changed status to", isAvailable);  
-        // console.log("changed sleep to", newDevoured); ---------------------------> HERE
 
         // Reload the page to get the updated list
         location.reload();
@@ -32,7 +34,6 @@ $(function() {
 
     var newBurger = {
       burger_name: $("#ca").val().trim(),
-      // sleepy: $("[name=sleepy]:checked").val().trim()  ---------------------------> HERE
       devoured: $("[name=devoured]:checked").val().trim()  
    
     };
@@ -66,3 +67,15 @@ $(function() {
     );
   });
 });
+
+function toast(){
+  if(isAvailable === true){
+    
+      
+    } else{
+     
+        M.toast({html: "restocked!"})
+      
+    }
+  
+}
