@@ -49,11 +49,16 @@ a.delete-burger{
 .buttonHolder{
   align-content: center!important;
 }
+#inputLine:active{
+  border-bottom: black!important;
+  box-shadow: none!important;
+  border-bottom-color: red;
+}
+input[type=text]:not(.browser-default){
+  border-bottom-color: red;
+  box-shadow: none;
+}
 
-.input-field textarea[class=materialize-textarea]:focus {
-  border-bottom: 1px solid #2196f3;
-  box-shadow: 0 1px 0 0 #2196f3;
-  }
 
 a.add{
   color:red;
